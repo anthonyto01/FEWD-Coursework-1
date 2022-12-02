@@ -16,9 +16,7 @@ const DisplayIngredients = ({ recipes }) => {
       <Accordian.Body>
         <ul>
           {ingredients.map((ingredients) => (
-            <li key={ingredients.name}>
-              {ingredients.name}: {ingredients.amount}
-            </li>
+            <li key={ingredients}> {ingredients}</li>
           ))}
         </ul>
       </Accordian.Body>
