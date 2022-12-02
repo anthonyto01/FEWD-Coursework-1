@@ -22,11 +22,13 @@ const Recipe = ({ recipes }) => {
         <Accordian.Body>
             <ol>
                 {method.map((method) => (
-                        <li key={method}>
-                            {method}
-                        </li>
+                        <li key={method}>{method}</li>
                 ))}
             </ol>
+        </Accordian.Body>
+        <Accordian.Header>Nutritional Information</Accordian.Header>
+        <Accordian.Body>
+
         </Accordian.Body>
     </Accordian>
         </>
