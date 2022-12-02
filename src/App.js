@@ -6,8 +6,10 @@ import Navigation from "./components/Navigation";
 import Error404 from "./components/Error404";
 import { recipes } from "./data/data";
 
+
 import Menu from "./components/Menu";
 import Recipe from "./components/Recipe";
+
 
 function App() {
   return (  
@@ -15,9 +17,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route path="/" element={<Home />} />
-          <Route path="menu" element={<Menu recipes={recipes} />}>
+        <Route path="menu" element={<Menu recipes={recipes} />}>
           <Route path=":itemId" element={<Recipe recipes={recipes} />} />
-          </Route>
+
+        </Route>
           <Route path="shopping" element={<Shopping />} />
         </Route>
         <Route path="*" element={<Error404 />} />

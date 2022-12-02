@@ -19,7 +19,15 @@ const Recipe = ({ recipes }) => {
             <h5>{description}</h5>
         <DisplayIngredients recipes={recipes} />
         <Accordian.Header>Method</Accordian.Header>
-        <Accordian.Body>{method}</Accordian.Body>
+        <Accordian.Body>
+            <ol>
+                {method.map((method) => (
+                        <li key={method}>
+                            {method}
+                        </li>
+                ))}
+            </ol>
+        </Accordian.Body>
     </Accordian>
         </>
     );
