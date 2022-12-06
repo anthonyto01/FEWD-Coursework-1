@@ -16,11 +16,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navigation />}>
-          <Route path="/" element={<Home />} />
-        <Route path="menu" element={<Menu recipes={recipes} />}>
+        <Route path="/" element={<Home recipes={recipes} />}>
           <Route path=":itemId" element={<Recipe recipes={recipes} />} />
-
         </Route>
+        <Route path="menu" element={<Menu />} />
           <Route path="shopping" element={<Shopping />} />
         </Route>
         <Route path="*" element={<Error404 />} />
