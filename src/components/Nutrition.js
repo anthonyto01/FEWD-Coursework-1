@@ -2,7 +2,6 @@ import React from "react";
 const Nutrition = ({ item }) => {
   return (
     <div>
-      <h3>Nutritional Information</h3>
       <ul style={{ listStyle: "none" }}>
         <li>Serving size:{item.serving_size_g} g</li>
         <li>Calories per serving :{item.calories}</li>
