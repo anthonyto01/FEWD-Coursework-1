@@ -9,23 +9,22 @@ import { recipes } from "./data/data";
 
 import Menu from "./components/Menu";
 import Recipe from "./components/Recipe";
-
+import DisplayRecipe from "./components/DisplayRecipe";
 
 function App() {
   return (  
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navigation />}>
-        <Route path="/" element={<Home recipes={recipes} />}>
-          <Route path=":itemId" element={<Recipe recipes={recipes} />} />
+    <Routes>
+        <Route path="/" element={<Navigation/>}>
+            <Route index element={<Home />}/>
+            <Route path="recipe/:itemId" element={<DisplayRecipe recipes={recipes} />} />
+            <Route path="menu" element={<Menu />} />
+            <Route path="shopping" element={<Shopping />} />
+            <Route path="*" element={<Error404 />}/>
         </Route>
-        <Route path="menu" element={<Menu />} />
-          <Route path="shopping" element={<Shopping />} />
-        </Route>
-        <Route path="*" element={<Error404 />} />
-      </Routes>
+    </Routes>
     </BrowserRouter>
   );
 }
-
 export default App;
+
