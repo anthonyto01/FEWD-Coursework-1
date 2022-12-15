@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Home from "./Home";
+import Menu from "./Menu";
 
 class Search extends Component {
   constructor(props) {
@@ -29,7 +29,7 @@ class Search extends Component {
             onChange={this.change}
           />
         </div>
-        <Home recipes={filtered} />
+        <Menu foodList={filtered} />
       </div>
     );
   }
