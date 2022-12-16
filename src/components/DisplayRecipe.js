@@ -1,5 +1,5 @@
 import React from "react";
-import {  useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import FetchData from "./FetchNutrition";
 import Accordion from "react-bootstrap/Accordion";
 
@@ -16,13 +16,13 @@ const DisplayRecipe = ({ recipes }) => {
     <>
       <Accordion>
       <Accordion.Header>Ingredients</Accordion.Header>
-      <Accordion.Body>
-        <ul>
-          {ingredients.map((ingredients) => (
-            <li key={ingredients}> {ingredients}</li>
-          ))}
-        </ul>
-      </Accordion.Body>
+        <Accordion.Body>
+          <ul>
+            {ingredients.map((ingredients) => (
+              <li key={ingredients}> {ingredients}</li>
+            ))}
+          </ul>
+        </Accordion.Body>
       <Accordion.Header>Method</Accordion.Header>
           <Accordion.Body>
             <ol>
@@ -30,11 +30,11 @@ const DisplayRecipe = ({ recipes }) => {
                     <li key={method}>{method}</li>
                 ))}
             </ol>
-      </Accordion.Body>
+        </Accordion.Body>
       <Accordion.Header>Nutritional Information</Accordion.Header>
-      <Accordion.Body>
-      <FetchData query={name} />
-      </Accordion.Body>
+        <Accordion.Body>
+          <FetchData query={name} />
+        </Accordion.Body>
       </Accordion>
     </>
   );
