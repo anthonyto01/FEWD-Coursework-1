@@ -1,6 +1,7 @@
 import React from "react";
 const Nutrition = ({ item }) => {
   return (
+    // Displays the pulled data from the API
     <div>
       <ul style={{ listStyle: "none" }}>
         <li>Serving size:{item.serving_size_g} g</li>

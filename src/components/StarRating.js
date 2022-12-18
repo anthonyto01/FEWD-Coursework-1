@@ -12,19 +12,15 @@ const StarRating = () => {
             return (
                 <label>
                 <input 
-                type="radio" 
-                name="rating" 
-                value="ratingValue" 
-                onClick={() => setRating(ratingValue)}/>
-                <FaStar 
-                className="star" 
-                color={ratingValue <= rating ? "blue" :""} 
-                size={20} 
+                    type="radio" 
+                    name="rating" 
+                    value="ratingValue" 
+                    onClick={() => setRating(ratingValue)}
                 />
+                <FaStar className="star" color={ratingValue <= rating ? "blue" :""} size={20} />
                 </label>
             );
         })}
-        <br></br><br></br>
     </div>
     );
 };
