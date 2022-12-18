@@ -1,3 +1,38 @@
+# FEWD Coursework
+S1823998
+This repository contains the source code for Web Development Application 2
+
+##### Completed by Anthony To
+
+## How to run the Website
+Before running the application use the following methods
+
+```
+npm install
+```
+After the node dependencies have been installed use to the following method to run the application on your localhost:3000
+
+```
+npm run
+```
+### Implemented Features
+---------------------------------
+    - Create Menu
+    - Create Shopping List
+    - Pulling nutritional information from API
+    - Functional Navigation Bar
+    - Functional Search and Filter Bar
+    - Star Rating
+        (Data can not be stored however)
+
+### Changes made from the original prototype wireframes
+---------------------------------
+    - The shopping list has now been implemented inside the menu page due
+    to code difficulties
+    - Data is being displaying in a single column using Accordions rather than being displaced adjacent to another
+    - The shopping list has been created so that by clicking ingredients the list will display rather than the previous adding button.
+    - Create menu is no longer on a separate page using inputted data, now uses recipes already shown
+- 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
