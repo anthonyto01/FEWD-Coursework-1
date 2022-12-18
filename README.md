@@ -1,7 +1,6 @@
 # FEWD Coursework
-S1823998
-This repository contains the source code for Web Development Application 2
-
+- S1823998
+- This repository contains the source code for Front End Web Development
 ##### Completed by Anthony To
 
 ## How to run the Website
