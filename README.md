@@ -12,7 +12,7 @@ npm install
 After the node dependencies have been installed use to the following method to run the application on your localhost:3000
 
 ```
-npm run
+npm start
 ```
 ### Implemented Features
 ---------------------------------
