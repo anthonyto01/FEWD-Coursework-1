@@ -1,8 +1,26 @@
-import React, { useState } from 'react';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faChevronRight, faChevronLeft, faCircle, faCheckCircle, faPlus } from '@fortawesome/free-solid-svg-icons';
+import React, { useContext } from "react";
+import ShoppingContext from "./ShoppingContext";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faChevronLeft, faCircle, faCheckCircle, faPlus } from '@fortawesome/free-solid-svg-icons';
+export default function ShoppingList() {
+  const [order] = useContext(ShoppingContext);
+  
+  return (
+    <div>
+      <p>To Create your own shopping list, click on the designated ingredients as shown above </p>
+        {order.map((item, index) => (
+          <p key={index}>
+            {item}
+          <br></br>
+          </p>
+        ))}
+    </div>
+  );
+}
 
+
+/* 
 const Shopping = () => {
     // HINT: each "item" in our list names a name,
     // a boolean to tell if its been completed, and a quantity
@@ -103,4 +121,4 @@ const Shopping = () => {
       </div>
     );
   };
-  export default Shopping;
+  export default Shopping; */

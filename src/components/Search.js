@@ -10,11 +10,12 @@ function Search({ details }) {
 
   return (
       <div>
-          <div>
+        <br/>
+          <div class="searchBar" style={{width:20+'%', margin:"20px"}}>
             <input
               className="form-control"
               type="text"
-              placeholder="Search ..."
+              placeholder="Search Recipes..."
               onChange={(e) =>  setSearchField(e.target.value)}
             />
           </div>

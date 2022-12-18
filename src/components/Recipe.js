@@ -1,7 +1,7 @@
 import React from "react";
 import {  useParams } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-
+import StarRating from "./StarRating";
 import DisplayRecipe from "./DisplayRecipe"
 
 const Recipe = ({ recipes }) => {
@@ -9,10 +9,11 @@ const Recipe = ({ recipes }) => {
     const currentItem = recipes.filter((item) => {
       return item.name === itemId;
     });
-    const { name, description, rating, img } = currentItem[0];
+    const { name, description, img } = currentItem[0];
 
     return (
         <>
+        <br/>
           <Card style={{width: '50rem'}}>
                 <Card.Img variant="top" src={img}/>
                 <Card.Body style={{ textAlign: "center"}}>
@@ -20,7 +21,7 @@ const Recipe = ({ recipes }) => {
                         {name}
                     </Card.Title>
                     <Card.Text>
-                        {rating}
+                    <StarRating />
                         {description}
                     </Card.Text>
                 </Card.Body>

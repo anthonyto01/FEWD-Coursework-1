@@ -17,6 +17,7 @@ const FetchData = ({ query }) => {
       carbohydrates_total_g: " ",
     });
   
+    // Pulls data from the API using the provided URL
     const fetchData = useCallback(() => {
       const url = "https://calorieninjas.p.rapidapi.com/v1/nutrition?query=" + query;
       console.log(url);
@@ -42,6 +43,7 @@ const FetchData = ({ query }) => {
     }, [fetchData, query]);
   
     return (
+      // Displays a list of the nutritional information based on the Query input
       <div>
         <Nutrition item={nutrition} />
       </div>

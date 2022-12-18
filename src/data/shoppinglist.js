@@ -1,7 +1,7 @@
-export const shoppinglist = [
+/* export const shoppinglist = [
     {
     itemName: "", 
     quantity: "",
     isSelected: ""
     }
-];
+]; */
