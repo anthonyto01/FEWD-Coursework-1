@@ -14,6 +14,10 @@ After the node dependencies have been installed use to the following method to r
 ```
 npm start
 ```
+
+Alternatively the deployed website can be accessed on 
+https://anthonytofewd.netlify.app/
+
 ### Implemented Features
 ---------------------------------
     - Create Menu
